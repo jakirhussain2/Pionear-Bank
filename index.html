@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakir Hussain Bank</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+       
+     <section>
+         <div id="cont" class="container bg-danger">
+             <div class="bank-head mt-5">
+                 <h2 class="text-success text-center fs-1 fw-bold text-uppercase">welcome to jakir hussain bank</h2>
+             </div>
+             <div class="bank-form mt-5 shadow rounded">
+                 <input type="text" placeholder="Enter Your Name Here" class="form-control">
+                 <br>
+                 <input type="password" placeholder="Enter Your Password Here" class="form-control">
+                 <br>
+                 <button id="logIn" class="btn btn-sucess bg-success text-danger fw-bold shadow rounded">Log-In</button>
+             </div>
+         </div>
+         <div id="transcation-area">
+             <h2 class="text-center fw-bold text-uppercase text-dark">trasnscation area</h2>
+             <div class="container">
+                 <div class="row d-flex justify-content-around">
+                     <div class="col-lg-3 col-md-3 bg-success shadow rounded mt-5">
+                         <h2 class="text-center fw-bold text-dark ">Deposit</h2>
+                         <p class="text-center fw-bold text-dark ">$ <span id="currentDeposit">00</span></p>
+                     </div>
+                     <div class="col-lg-3 col-md-3 bg-primary shadow rounded mt-5">
+                        <h2 class="text-center fw-bold text-dark ">Widhdraw</h2>
+                        <p class="text-center fw-bold text-dark ">$ <span id="widhdrawBalance">00</span></p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 bg-secondary shadow rounded mt-5">
+                        <h2 class="text-center fw-bold text-dark ">Balance</h2>
+                        <p class="text-center fw-bold text-dark ">$ <span id="totalBalance">1240</span> </p>
+                    </div>
+                 </div>
+                 <div class="row mt-5 d-flex justify-content-around rounded shadow"">
+                     <div class="col-lg-5 bg-secondary">
+                         <h2 class="text-lowercase text-white fw-bold">Deposit</h2>
+                         <input id="depositAmount" type="text" placeholder="$ amount you want to deposit" class="form-control">
+                         <button id="depositBtn" class="btn btn-primary mt-3 text-uppercase mb-3">deposit</button>
+                     </div>
+                     <div class="col-lg-5 bg-success">
+                        <h2 class="text-lowercase text-white fw-bold">withdraw</h2>
+                        <input id="widhdraw" type="text" placeholder="$ amount you want to withdraw" class="form-control">
+                        <button id="widhdrawBtn" class="btn btn-primary mt-3 text-uppercase mb-3">withdraw</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+    
+
+
+
+    <!-- javascript link part -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
